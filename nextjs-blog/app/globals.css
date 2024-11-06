@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.HeroSec{
+    width:fit-content;
+    height: 100vh;
+    
+}
+.hero{
+    width: 450px;
+}
+.whitediv{
+    clip-path: polygon(0% 0%, 78% 0, 100% 100%, 75% 100%, 75% 100%, 47% 100%, 0 100%);
+    width: 11rem;
+   
+}
+
+.btun:hover{
+    background-color: red;
+}
+.countrydiv{
+    background-image: url('https://siuk-europe.s3.eu-west-2.amazonaws.com/static/original_images/global-count.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:hard-light;
+}
+.Equirebtn{
+    border: 1px solid white;
+}
+.calno:hover{
+    text-decoration: underline;
+}
+.Herodiv{
+    background-image: url('https://siuk-europe.s3.eu-west-2.amazonaws.com/assets/banner/16th-banner-Ipad-820x220-2.webp');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:right;
+    
+}
+.Herobtn{
+    border: 2px double rgb(52, 52, 139);
+    background-color: white;
+}
+.Downloadbtn:hover{
+    background-color: white;
+    color: rgb(37 99 235 / var(--tw-text-opacity)) ;/* #2563eb */
+    border: 1px solid rgb(52, 52, 139);
+
+
+}
+.selection{
+    border: 2px solid rgb(52, 52, 139);
+}
+.Consltbtn:hover{
+    background-color: #fff;
+    color:rgb(52, 52, 139) ;
+    border: 1px solid rgb(52, 52, 139);
+    transition: 1s;
+}
+.Aboarddiv{
+    border: 1px solid black;
+}
+.NewsContent{
+    border-bottom: 2px dotted black;
+}
+.NewsContent:hover{
+    text-decoration: underline;
+}
+
+.LinkNews:hover{
+    color: blue;
+}
+.footerHeading{
+    border-bottom: 5px solid red;
+    
+}
+.vedioContainer{
+    position: relative;
+    overflow: hidden;
+}
+.vedio{
+  
+    top: 10px;
+    left: 0;
+    object-fit:contain;
+    
+    animation: moveVideo 10s linear infinite ;
+
+}
+.images{
+   
+    object-fit:contain;
+    
+    animation: moveImage 20s reverse infinite ;
+}
+.Imagediv{
+    width: 60%;
+    height: fit-content;
+}
+@keyframes moveVideo {
+    0%{
+       
+        transform: translateX(10vw);
+    }
+    100%{
+        transform: translateX(-60vw);
+        
+    }
+    
+}
+@keyframes moveImage {
+    0%{
+       
+        transform: translateX(80vw);
+    }
+    100%{
+        transform: translateX(-60vw);
+        
+    }
+    
+}
+@media screen and (max-width:827px) {
+  .HeroContent{
+    visibility:hidden;
+  }
+  .MainMobileHero {
+    position: relative;
+  }
+ 
+   
+    
+}
+@media screen and (min-width:827px) {
+    .MobileHerodiv{
+        visibility:hidden;
+    } 
+     
+      
+  }
